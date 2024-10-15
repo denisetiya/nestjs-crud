@@ -1,6 +1,4 @@
-Berikut adalah contoh README.md yang lebih lengkap dan terstruktur untuk proyek CRUD menggunakan NestJS dengan Bun. Anda bisa menyesuaikan detail sesuai kebutuhan proyek Anda:
 
-```markdown
 # NestJS CRUD Application with Bun
 
 This project is a simple CRUD (Create, Read, Update, Delete) application built with [NestJS](https://nestjs.com/) and [Bun](https://bun.sh/). The application provides a RESTful API for managing products, including endpoints for adding, retrieving, updating, and deleting products.
@@ -131,5 +129,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Instalasi dan Penggunaan**: Langkah-langkah jelas untuk menginstal dan menjalankan aplikasi.
 - **API Endpoints**: Menguraikan endpoint yang tersedia dan memberikan contoh permintaan.
 - **Kontribusi dan Lisensi**: Menyediakan informasi tentang cara berkontribusi dan lisensi proyek.
-
-Silakan sesuaikan README ini dengan detail spesifik dari proyek Anda, seperti nama repositori dan contoh data yang lebih relevan jika diperlukan!
