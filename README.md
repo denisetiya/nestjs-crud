@@ -119,13 +119,3 @@ Contributions are welcome! Please open an issue or submit a pull request to disc
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-```
-
-### Penjelasan:
-
-- **Judul dan Deskripsi**: Memberikan gambaran umum tentang proyek.
-- **Tabel Konten**: Memudahkan navigasi dalam README.
-- **Fitur dan Teknologi**: Menyediakan informasi tentang apa yang dilakukan proyek dan alat yang digunakan.
-- **Instalasi dan Penggunaan**: Langkah-langkah jelas untuk menginstal dan menjalankan aplikasi.
-- **API Endpoints**: Menguraikan endpoint yang tersedia dan memberikan contoh permintaan.
-- **Kontribusi dan Lisensi**: Menyediakan informasi tentang cara berkontribusi dan lisensi proyek.
