@@ -1,85 +1,135 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
-</p>
+Berikut adalah contoh README.md yang lebih lengkap dan terstruktur untuk proyek CRUD menggunakan NestJS dengan Bun. Anda bisa menyesuaikan detail sesuai kebutuhan proyek Anda:
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+```markdown
+# NestJS CRUD Application with Bun
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+This project is a simple CRUD (Create, Read, Update, Delete) application built with [NestJS](https://nestjs.com/) and [Bun](https://bun.sh/). The application provides a RESTful API for managing products, including endpoints for adding, retrieving, updating, and deleting products.
 
-## Description
+## Table of Contents
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+- [Features](#features)
+- [Technologies](#technologies)
+- [Installation](#installation)
+- [Usage](#usage)
+- [API Endpoints](#api-endpoints)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Project setup
+## Features
 
-```bash
-$ pnpm install
-```
+- Create new products
+- Retrieve a list of products
+- Retrieve a single product by ID
+- Update existing products
+- Delete products
 
-## Compile and run the project
+## Technologies
 
-```bash
-# development
-$ pnpm run start
+- **NestJS** - A progressive Node.js framework for building efficient and scalable server-side applications.
+- **Bun** - A modern JavaScript runtime that allows for faster installations and builds.
+- **TypeScript** - A typed superset of JavaScript that compiles to plain JavaScript.
+- **Express** - A minimal and flexible Node.js web application framework for building APIs.
+- **In-Memory Data Store** - The application uses a simple in-memory array to store product data.
 
-# watch mode
-$ pnpm run start:dev
+## Installation
 
-# production mode
-$ pnpm run start:prod
-```
+### Prerequisites
 
-## Run tests
+Ensure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (version 14 or higher)
+- [Bun](https://bun.sh/)
+
+### Clone the Repository
 
 ```bash
-# unit tests
-$ pnpm run test
-
-# e2e tests
-$ pnpm run test:e2e
-
-# test coverage
-$ pnpm run test:cov
+git clone https://github.com/your-username/nestjs-crud-bun.git
+cd nestjs-crud-bun
 ```
 
-## Resources
+### Install Dependencies
 
-Check out a few resources that may come in handy when working with NestJS:
+Use Bun to install the necessary dependencies:
 
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
-- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
-- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
+```bash
+bun install
+```
 
-## Support
+## Usage
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+### Running the Application
 
-## Stay in touch
+To start the application, use the following command:
 
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+```bash
+bun run start
+```
+
+The application will be running on `http://localhost:3000`.
+
+### Testing
+
+To run the tests for this application, you can use the following command:
+
+```bash
+bun test
+```
+
+## API Endpoints
+
+### Products
+
+| Method | Endpoint         | Description                              |
+|--------|------------------|------------------------------------------|
+| GET    | `/product`       | Retrieve all products                    |
+| GET    | `/product/:id`   | Retrieve a single product by ID          |
+| POST   | `/product/add`   | Add a new product                        |
+| PUT    | `/product/update/:id` | Update an existing product          |
+| DELETE | `/product/delete/:id` | Delete a product by ID              |
+
+### Example Requests
+
+1. **Retrieve all products**
+   ```bash
+   curl -X GET http://localhost:3000/product
+   ```
+
+2. **Add a new product**
+   ```bash
+   curl -X POST http://localhost:3000/product/add \
+   -H "Content-Type: application/json" \
+   -d '{"name": "Product 4", "price": 400, "description": "Product 4 description"}'
+   ```
+
+3. **Update a product**
+   ```bash
+   curl -X PUT http://localhost:3000/product/update/0 \
+   -H "Content-Type: application/json" \
+   -d '{"name": "Updated Product", "price": 150, "description": "Updated description"}'
+   ```
+
+4. **Delete a product**
+   ```bash
+   curl -X DELETE http://localhost:3000/product/delete/0
+   ```
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request to discuss changes.
 
 ## License
 
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+```
+
+### Penjelasan:
+
+- **Judul dan Deskripsi**: Memberikan gambaran umum tentang proyek.
+- **Tabel Konten**: Memudahkan navigasi dalam README.
+- **Fitur dan Teknologi**: Menyediakan informasi tentang apa yang dilakukan proyek dan alat yang digunakan.
+- **Instalasi dan Penggunaan**: Langkah-langkah jelas untuk menginstal dan menjalankan aplikasi.
+- **API Endpoints**: Menguraikan endpoint yang tersedia dan memberikan contoh permintaan.
+- **Kontribusi dan Lisensi**: Menyediakan informasi tentang cara berkontribusi dan lisensi proyek.
+
+Silakan sesuaikan README ini dengan detail spesifik dari proyek Anda, seperti nama repositori dan contoh data yang lebih relevan jika diperlukan!
