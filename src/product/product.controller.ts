@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Header, NotFoundException, Param, Post } from '@nestjs/common';
+import { Body, Controller, Delete, Get, Header, NotFoundException, Param, Post, Put } from '@nestjs/common';
 
 const products = [
   {
@@ -52,5 +52,41 @@ export class ProductController {
     return {
         'message': `Product ${newProduct.name} added successfully`,
     }
+  }
+
+  @Delete('delete/:id') 
+  @Header('Content-Type', 'application/json')
+  deleteProduct(@Param('id') id: string) {
+    const productId = parseInt(id);
+
+    const findProduct = products.find(p => p.id === productId);
+    if (!findProduct) {
+      throw new NotFoundException(`Product with ID ${id} not found`);
+    }
+
+    products.splice(products.indexOf(findProduct), 1);
+    
+    return {
+      message: `Product with ID ${id} deleted successfully`,
+    };
+  }
+
+  @Put('update/:id')
+  @Header('Content-Type', 'application/json')
+  updateProduct(@Param('id') id: string, @Body() product: { name: string; price: number; description: string }) {
+    const productId = parseInt(id);
+
+    const findProduct = products.find(p => p.id === productId);
+    if (!findProduct) {
+      throw new NotFoundException(`Product with ID ${id} not found`);
+    }
+
+    findProduct.name = product.name;
+    findProduct.price = product.price;
+    findProduct.description = product.description;
+
+    return {
+      message: `Product with ID ${id} updated successfully`,
+    };
   }
 }
